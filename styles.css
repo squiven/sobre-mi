@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(190, 176, 158);
+    align-items: center;
+    align-content: center;
+}
+
+header{
+    font-size: 30px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+article{
+    font-size: 20px;
+}
