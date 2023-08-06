@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href='https://cdn-icons-png.flaticon.com/512/6472/6472942.png'>
     <link rel="stylesheet" href="styles.css">
     <title>Práctico N1: Calculadora Simple</title>
 
@@ -12,5 +13,23 @@
     <header>
         <h1>Práctico N1: Calculadora Simple</h1>
     </header>
+
+    <input type="number" id="valor1">
+
+    <select name="operacion" id="operacion">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+
+    <input type="number" id="valor2">
+
+    <button id="calcular" onclick="calcular()">Calcular</button>
+
+    <input type="number" disabled id="resultado">
+
+    <script src="script.js"></script>
+
 </body>
 </html>
