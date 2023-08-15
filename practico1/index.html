@@ -14,7 +14,9 @@
         <h1>Práctico N1: Calculadora Simple</h1>
     </header>
 
-    <input type="number" id="valor1">
+    <div class="calculadora">
+
+    <input type="number" id="valor1" step="any" placeholder="Ingrese un número">
 
     <select name="operacion" id="operacion">
         <option value="+">+</option>
@@ -23,11 +25,15 @@
         <option value="/">/</option>
     </select>
 
-    <input type="number" id="valor2">
+    <input type="number" id="valor2" step="any" placeholder="Ingrese un número">
 
     <button id="calcular" onclick="calcular()">Calcular</button>
 
-    <input type="number" disabled id="resultado">
+    <button id="resetear" onclick="resetear()">Resetear</button>
+
+    <input type="number" disabled id="resultado" placeholder="---">
+
+    </div>
 
     <script src="script.js"></script>
 

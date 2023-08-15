@@ -1,6 +1,25 @@
-header{
-    font-size: 25px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+header {
+    background-color: rgb(84, 84, 216);
+    color: white;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: brown;
+}
+
+.calculadora {
+    background-color: white;
+}
+
+button {
+    background-color: rgb(84, 84, 216);
+    color: white;
+}
+
+#resultado {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
 }
