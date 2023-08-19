@@ -6,41 +6,24 @@
     <link rel="icon" href="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/svg/1f916.svg">
     <link rel="stylesheet" href="styles.css">
     <title>Mi página personal</title>
-    
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
+</head>
 <body>
     <header>
+        <img src="assets/profile-pic.png" alt="Foto de perfil" id="profile-pic">
         <h1>Información Personal</h1>
-    </header>
+        <button id="modoBoton">🌙</button>
+    </header>    
 
-    <nav>
-        <!-- Acá deberia ingresar una imagen mia-->
-    </nav>
-
-    <main>  
-
-        <!-- Separador / Insertar imagen-->
-
-        <div class="imagenes">
-            <article>
-                <img src="assets/Gif Multicolor.jpg" alt="">
-            </article>
-        </div> 
-
+    <main>
         <article>
             <h2>Datos Básicos</h2>
             <ul>
-                <li><strong>Nombre:</strong> Sebastián Quiven </li>
-                <li><strong>Edad:</strong> 37 años </li>
-                <li><strong>Pais:</strong> Argentina </li>
+                <li><strong>Nombre:</strong> Sebastián Quiven</li>
+                <li><strong>Edad:</strong> 37 años</li>
+                <li><strong>País:</strong> Argentina</li>
             </ul>
-        </article>
-
-        <!-- Separador / Insertar imagen-->
-
-        <article>
-            <img src="assets/Gif Multicolor.jpg" alt="">
         </article>
 
         <article>
@@ -55,21 +38,11 @@
             </ul>
         </article>
 
-        <!-- Separador / Insertar imagen-->
-
-        <article>
-            <img src="assets/Gif Multicolor.jpg" alt="">
-        </article>
-        
         <article>
             <h2>Experiencias</h2>
-            <p>Diseño de interiores</p>
-        </article>
-
-        <!-- Separador / Insertar imagen-->
-        
-        <article>
-            <img src="assets/Gif Multicolor.jpg" alt="">
+            <ul>
+                <li>Diseño de interiores</li>
+            </ul>
         </article>
 
         <article>
@@ -77,13 +50,21 @@
             <video src="assets/Video CSS.mp4" autoplay loop controls></video>
         </article>
     </main>
-
-    <aside>
-        <!-- Contenido adicional o enlaces -->
-    </aside>
-
-    <footer>
-        <!-- Información del pie de página-->
-    </footer>
+    <script>
+        const modoBoton = document.getElementById('modoBoton');
+        const body = document.body;
+    
+        modoBoton.addEventListener('click', () => {
+            if (body.classList.contains('dark-mode')) {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+                modoBoton.innerHTML = '🌙';
+            } else {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+                modoBoton.innerHTML = '☀️';
+            }
+        });
+    </script>    
 </body>
 </html>
