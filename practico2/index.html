@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra Papel Tijera</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Piedra Papel Tijera</h1>
+    </header>
+
+    <article class="Instrucciones"> 
+        <h2>Instrucciones</h2>
+        <ol> 
+            <br>
+            <li>Ingresa tu nombre y haz clic en enviar.</li> 
+            <li>Elige una de las tres opciones: piedra, papel o tijera.</li> 
+            <li>La computadora también elegirá una opción al azar.</li> 
+            <li>Se compararán las opciones y se determinará el ganador según las siguientes reglas: 
+                <ul> 
+                    <li>Piedra gana a tijera.</li> 
+                    <li>Tijera gana a papel.</li> 
+                    <li>Papel gana a piedra.</li> 
+                    <li>Si ambos eligen la misma opción, es un empate.</li> 
+                </ul> 
+            </li> 
+            <li>El marcador se actualizará con el resultado de cada ronda.</li> 
+            <li>El juego termina cuando uno de los dos llegue a 5 victorias.</li> 
+            <li>Para reiniciar el juego, haz clic en el botón reiniciar.</li> 
+        </ol> 
+    </article>
+
+    <div class="nombre">
+        <label for="nombre"></label>
+        <input type="text" name="nombre" id="nombre" required placeholder="Ingrese su nombre">
+        <button id="enviar">Enviar</button>
+    </div>
+
+    <div class="marcador">
+        <p>Marcador:</p>
+        <p>Jugador: <span id="victoriasJugador">0</span></p>
+        <p>PC: <span id="victoriasPC">0</span></p>
+    </div>
+
+    <div class="botones">
+        <button class="opcion" id="piedra"><img src="assets/Piedra.png" alt="Piedra"></button>
+        <button class="opcion" id="papel"><img src="assets/Papel.png" alt="Papel"></button>
+        <button class="opcion" id="tijera"><img src="assets/Tijera.png" alt="Tijera"></button>
+    </div>
+    
+    <p id="mensaje"></p>
+
+    <div class="resultado" style="display: none;">
+        <p id="resultadoTexto"></p>
+        <button id="reiniciar">Reiniciar</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
