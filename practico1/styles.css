@@ -1,25 +1,62 @@
+/* Estilos generales */
 body {
+    background-color: #333; /* Fondo gris oscuro */
+    color: white; /* Texto en blanco */
     font-family: Arial, sans-serif;
-    background-color: white;
 }
 
 header {
-    background-color: rgb(84, 84, 216);
-    color: white;
     text-align: center;
+    background-color: #444; /* Fondo más oscuro para el encabezado */
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
 }
 
 .calculadora {
-    background-color: white;
+    background-color: #222; /* Fondo negro para la calculadora */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+/* Estilos para los elementos de entrada y botones */
+input[type="number"],
+select {
+    width: 90%; /* Reducir el ancho al 90% */
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background-color: #333; /* Fondo gris oscuro para los campos de entrada y select */
+    color: white;
+    border-radius: 5px;
+    text-align: center; /* Centrar el texto en los campos de entrada */
 }
 
 button {
-    background-color: rgb(84, 84, 216);
+    background-color: #5b0c00; /* Rojo vino tinto */
     color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
+button:hover {
+    background-color: #cc0000; /* Cambio de color al pasar el cursor */
+}
+
+/* Estilos para el resultado */
 #resultado {
-    font-size: 16px;
+    font-size: 24px;
     font-weight: bold;
-    color: black;
+    background-color: #444; /* Fondo más oscuro para el resultado */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
 }
